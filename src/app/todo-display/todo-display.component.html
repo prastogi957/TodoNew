@@ -1,0 +1,15 @@
+
+
+<mat-list style=" width: 40% ; padding-left:20% ">
+    <mat-list-item *ngFor="let item of lister; let i=index">
+      <mat-checkbox (click)=doneList(i)>{{item}}   </mat-checkbox> <button mat-button> <mat-icon (click)="delete(i)">delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
+
+<mat-toolbar color="primary">Tasks completed... </mat-toolbar>
+
+  <mat-list style="width: 40% ; padding-left:20% ">
+    <mat-list-item *ngFor="let items of lister2; let j=index">
+      <mat-checkbox ><s>{{items}}</s>   </mat-checkbox> <button mat-button> <mat-icon (click)="delete2(j)">delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
