@@ -11,7 +11,7 @@ export class TodoInsertComponent implements OnInit {
   constructor(private rem:TodoService) { }
   task
   printer(){
-    console.log("Akhil chutiya hai")
+    console.log("Hello World")
   }
   addTodo(){
     console.log(this.task);
